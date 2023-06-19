@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bebus Birthday Cards</title>
     <link
       rel="stylesheet"
@@ -11,30 +12,57 @@
   </head>
   <body>
     <div class="container">
+      <!-- card one hermit -->
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/7img.jpg?raw=true" />
       </div>
+
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/6img.jpg?raw=true" />
       </div>
+
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/5img.jpg?raw=true" />
       </div>
+
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/4img.jpg?raw=true" />
       </div>
+
+      <!-- card two temperance -->
       <div class="tarot-card shuffle">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/3img.jpg?raw=true" />
       </div>
+
+      <!-- card three hanged-man -->
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/2img.jpg?raw=true" />
       </div>
+
+      <!-- card four hierophant -->
       <div class="tarot-card">
         <img src="https://github.com/Ashir-jr/bday-cards.github.io/blob/main/images/1img.png?raw=true" />
       </div>
     </div>
 
+    <script>
+      function autoplay() {
+        var t = setTimeout(function () {
+          var button = document.querySelector('[title="Play"]') || false;
+          if (button) {
+            console.log("Click", button);
+            button.click();
+          }
+        }, 999);
+      }
+      document.addEventListener("DOMContentLoaded", (event) => {
+        autoplay();
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
